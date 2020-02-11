@@ -11,19 +11,17 @@ function draw() {
 
 	background(0, 200, 0); 
 
-	fill('green');
-	stroke( 'white');
-	strokeWeight(5);
-
+	 fill('green');
 
 	ellipse(209, 180, 200);
 	ellipse(220, 160, 20);
 	ellipse(160, 160, 30, 10); //left eyes
    		
-   	rectMode(CENTER);
+   	rectMode(CENTER); // center the mouth 
    	strokeWeight(2);
-   	fill('blue'); // center the mouth 
+   	fill('blue');
 	rect(200, 220, 100, 20, 10);
+	rect(200, 220, 90, 9, 10);
 
 
     arc(300,160, 50, 40,-HALF_PI, HALF_PI);
