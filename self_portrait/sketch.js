@@ -1,5 +1,6 @@
 /*
-		self potrait 
+		self potrait
+    by George 
 		02/06/2020
 */
 
@@ -8,7 +9,8 @@ function setup(){
 }
 
 function draw() {
-	background(180) 
+	background(0,0,0);
+  // shape with xy coordinate + size
 
 
 	ellipse(200, 180, 200);
@@ -16,8 +18,8 @@ function draw() {
 	ellipse(160, 160, 30, 10);
    		
    	rectMode(CENTER); // center the mouth 
-   	strokeWeight(2);
-	rect(200, 220, 100, 20, 10);
+   	strokeWeight(1);
+	  rect(200, 220, 100, 20, 10);
 
 
     arc(300,160, 50, 40,-HALF_PI, HALF_PI);
@@ -32,7 +34,7 @@ function draw() {
 
         // fill();
         //noStroke();
-        triangle(140, 200, 180, 150, 170, 120);
+        triangle(140, 200, 180, 150, 200, 200);
 
         
         
