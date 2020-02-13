@@ -25,10 +25,10 @@ function draw() {
 	strokeWeight(2);
 	line(309,180, 509, 100);
 
-   	strokeWeight(2);
-   	fill('blue');
-	rect(200, 220, 100, 20, 10);
-	rect(200, 220, 90, 9, 10);
+ //   	strokeWeight(2);
+ //   	fill('blue');
+	// rect(200, 220, 100, 20, 10);
+	// rect(200, 220, 90, 9, 10);
 
 
     //arc(300,160, 50, 40,-HALF_PI, HALF_PI);
