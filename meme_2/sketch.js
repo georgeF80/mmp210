@@ -4,11 +4,13 @@
 		02/06/2020
 */
 		
-   var kobe1Image;
+   var kobe;
+   var Panther;
 
    	function preload()	{
    		
-   		kobe1Image = loadImage("kobe.jpg");
+   		kobeImage = loadImage("kobe.jpg");
+   		PantherImage = loadImage("ThePanther.jpg");
 
 
    	}
@@ -16,23 +18,43 @@
 function setup() {
 	var canvas = createCanvas(500, 500);
 	canvas.drawingContext.miterLimit = 2;
+	rectMode(CENTER);
 }
 
 function draw() {
 	background('black');
 
+		//draw the image
+	if (mouseIsPressed) {
+		image(PantherImage, 0, 0, width, height);
+	} else{
+		image(kobeImage, 0, 0, width, height);
+	
+	}
 
-	image(kobe1Image, 0, 0,);
+	
+	let s = 60;
+	rectMode(CORNER);
+	rect(0, 0, mouseX - s, height);
+	rect(mouseX + s, 0, width, height);
+	rect(0, 0, width, mouseY - s);
+	rect(0, mouseY + s, width, height);
+	
+
+
+
+	//image(kobe, 500, 500);
+	//image(Panther, 500, 500);
 
 	textSize(100);
-	fill('blue');
+	fill('black');
 	stroke('pink');
 	strokeWeight(20);
 	textStyle(ITALIC);
 	textFont('Segoe UI');
 	textAlign(LEFT, CENTER);
 
-	var hello = 'kobe';
+	var hello = ' There Piont';
 	var n = map(frameCount, 0, 400, 0, hello.length);
 	text(hello.charAt(n), 0, 250);
 
@@ -41,7 +63,7 @@ function draw() {
 	textStyle(NORMAL);
 	textAlign(CENTER, TOP);
 
-	var welcome = 'shoot your shot';
+	var welcome = '';
 	var end = map(frameCount, 0, 200, 0, welcome.length);
 	text(welcome.substring(0, end), 250, 350);
 }
