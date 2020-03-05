@@ -53,10 +53,10 @@ arc(x + 100,y - 30, s - 140, s - 150,-HALF_PI, HALF_PI);
 	line(x - 10, y + 45, s + 110, s + 40);//right line for the mouth 
 	line(x + 35, y + 45, s + 110, s + 40);// left ling for the mouth 
     
-    fill('white');
-    strokeWeight(1);
-	ellipse(x - 45, y + 130, s - 100, s - 140); // pow
-	ellipse(x + 65, y + 130, s - 100, s - 140); // pow two
+   // fill('white');
+   // strokeWeight(1);
+	//ellipse(x - 45, y + 130, s - 100, s - 140); // pow
+	//ellipse(x + 65, y + 130, s - 100, s - 140); // pow two
 
 
 
