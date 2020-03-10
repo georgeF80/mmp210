@@ -22,7 +22,7 @@ function draw() {
 	background('black');
 
 
-	image(kobe1Image, 0, 0,);
+	image(kobe1Image, 0, 0, width, height);
 
 	textSize(100);
 	fill('blue');

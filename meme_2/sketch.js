@@ -1,18 +1,10 @@
-/*
-		self potrait
-    by George 
-		02/06/2020
-*/
-		
-   var kobeImage;
-   var kobeShotImage;
-
-
+ var kobe1Image;
+ var kobeShot;
+ var counter = 0;
    	function preload()	{
    		
-   		kobeImage = loadImage("kobe.jpg");
-   		kobeShotImaga = loadImage("kobe2.jpg");
-
+   		kobe1Image = loadImage("kobe.jpg");
+   		kobeShot = loadImage("kobe2.jpg");
 
    	}
 
@@ -20,20 +12,27 @@ function setup() {
 	var canvas = createCanvas(500, 500);
 	canvas.drawingContext.miterLimit = 2;
 }
-	function draw(){
-	if (mouseIsPressed){
-		background('kobeShotImage');
-	}else {
-		background('kobeImage');
-	}
-}
+
+//function mousePressed(){
+	//counter++;
+	//if (counter == 2){
+		//counter = 0;
+	//}
+
+//}
 
 function draw() {
 	background('black');
-	
+	if (mouseX > width/2 && mouseY > height/2) {
+		image(kobeShot, width/2, height/2, width/2, height/2);
+	}else {
+		image(kobe1Image, 0, 0, width, height);
+	} 
 
 
-	image(kobe1Image, 0, 0, width, height);
+
+	//image(kobe1Image, 0, 0, width, height);
+	//image(kobeShot, 0, 0, width, height);
 
 	textSize(100);
 	fill('blue');
