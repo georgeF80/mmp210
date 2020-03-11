@@ -56,8 +56,13 @@ background(0,191, 255);
 	line(x - 10, y + 45, s + 110, s + 40);//right line for the mouth 
 	line(x + 35, y + 45, s + 110, s + 40);// left ling for the mouth 
     
+<<<<<<< HEAD
     //fill('white');
     //strokeWeight(1);
+=======
+   // fill('white');
+   // strokeWeight(1);
+>>>>>>> 8459541b95233871bd23e3de607c1a8c3ae90dc9
 	//ellipse(x - 45, y + 130, s - 100, s - 140); // pow
 	//ellipse(x + 65, y + 130, s - 100, s - 140); // pow two
 
