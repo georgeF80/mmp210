@@ -5,7 +5,9 @@
    		
    		kobe1Image = loadImage("kobe.jpg");
    		kobeShot = loadImage("kobe2.jpg");
-
+   		kobeJump = loadImage("stepBack.jpg");
+   		kobeLayup = loadImage("slamDunck.jpeg")
+   		kobeFree = loadImage("freeThrow.jpg")
    	}
 
 function setup() {
@@ -25,9 +27,13 @@ function draw() {
 	background('black');
 	if (mouseX > width/2 && mouseY > height/2) {
 		image(kobeShot, width/2, height/2, width/2, height/2);
-	}else {
-		image(kobe1Image, 0, 0, width, height);
-	} 
+	}else if (mouseX < width/2 && mouseY > height/2){
+		image(kobeJump, 0, hieght/2, width/2, height);
+	}else if (mouseX > width/2 && mouseY < height/2){
+		image(kobeLayup, width/2, 0, width, height/2);
+	} else{
+		image(kobeFree, 0, 0, width/2, height/2);
+	}
 
 
 
