@@ -17,9 +17,6 @@ function setup(){
 function draw() {
 background(0,191, 255);
 
-	//arc(x + 100,y - 30, s - 140, s - 150,-HALF_PI, HALF_PI);
-    //arc(400, 160, 20, 30,-HALF_PI, HALF_PI);
-    //arc(x - 80,y - 30, s - 150, s - 140,HALF_PI, -HALF_PI)
     triangle(230, 140, 248, 20, 295, 100);
     triangle(300, 160, 365, 20, 385, 127);
     fill('#FA5882');
@@ -56,13 +53,8 @@ background(0,191, 255);
 	line(x - 10, y + 45, s + 110, s + 40);//right line for the mouth 
 	line(x + 35, y + 45, s + 110, s + 40);// left ling for the mouth 
     
-<<<<<<< HEAD
     //fill('white');
     //strokeWeight(1);
-=======
-   // fill('white');
-   // strokeWeight(1);
->>>>>>> 8459541b95233871bd23e3de607c1a8c3ae90dc9
 	//ellipse(x - 45, y + 130, s - 100, s - 140); // pow
 	//ellipse(x + 65, y + 130, s - 100, s - 140); // pow two
 
