@@ -8,7 +8,7 @@
 
    	function preload()	{
    		
-   		kobe1Image = loadImage("kobe.jpg");
+   		kobe1Image = loadImage("freeThrow.jpg");
 
 
    	}
@@ -41,7 +41,7 @@ function draw() {
 	textStyle(NORMAL);
 	textAlign(CENTER, TOP);
 
-	var welcome = 'shoot your shot';
+	var welcome = 'shoot for the starts like kobe';
 	var end = map(frameCount, 0, 200, 0, welcome.length);
 	text(welcome.substring(0, end), 250, 350);
 }

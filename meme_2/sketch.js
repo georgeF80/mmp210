@@ -1,13 +1,17 @@
- var kobe1Image;
- var kobeShot;
- var counter = 0;
+/*
+		self potrait
+    by George 
+		02/06/2020
+*/
+		
+   var kobe1Image;
+
    	function preload()	{
    		
-   		kobe1Image = loadImage("kobe.jpg");
-   		kobeShot = loadImage("kobe2.jpg");
-   		kobeJump = loadImage("stepBack.jpg");
-   		kobeLayup = loadImage("slamDunck.jpeg")
-   		kobeFree = loadImage("freeThrow.jpg")
+   		kobe1Image = loadImage("freeThrow.jpg");
+   		TheStar = loadImage("shootingStar2.jpg");
+
+
    	}
 
 function setup() {
@@ -15,30 +19,14 @@ function setup() {
 	canvas.drawingContext.miterLimit = 2;
 }
 
-//function mousePressed(){
-	//counter++;
-	//if (counter == 2){
-		//counter = 0;
-	//}
-
-//}
-
 function draw() {
-	background('black');
-	if (mouseX > width/2 && mouseY > height/2) {
-		image(kobeShot, width/2, height/2, width/2, height/2);
-	}else if (mouseX < width/2 && mouseY > height/2){
-		image(kobeJump, 0, hieght/2, width/2, height);
-	}else if (mouseX > width/2 && mouseY < height/2){
-		image(kobeLayup, width/2, 0, width, height/2);
-	} else{
-		image(kobeFree, 0, 0, width/2, height/2);
+	background('kobe1Image');
+	if (mouseIsPressed) {
+		background('TheStar');
 	}
 
 
-
-	//image(kobe1Image, 0, 0, width, height);
-	//image(kobeShot, 0, 0, width, height);
+	
 
 	textSize(100);
 	fill('blue');
@@ -57,7 +45,7 @@ function draw() {
 	textStyle(NORMAL);
 	textAlign(CENTER, TOP);
 
-	var welcome = 'shoot your shot';
+	var welcome = 'shoot for the starts like kobe';
 	var end = map(frameCount, 0, 200, 0, welcome.length);
 	text(welcome.substring(0, end), 250, 350);
 }
