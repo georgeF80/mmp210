@@ -35,9 +35,9 @@ function draw() {
 	if (mouseX > width/2 && mouseY > height/2) {
 		image(kobeShot, width/2, height/2, width/2, height/2);
 	}else if (mouseX < width/2 && mouseY > height/2){
-		image(kobeJump, 0, hieght/2, width/2, height);
+		image(kobeJump, 0, height/2, width/2, height/2);
 	}else if (mouseX > width/2 && mouseY < height/2){
-		image(kobeLayup, width/2, 0, width, height/2);
+		image(kobeLayup, width/2, 0, width/2, height/2);
 	} else {
 		image(kobeFree, 0, 0, width/2, height/2);
 	}
