@@ -5,7 +5,7 @@
 */
 var kobeImage;
 var s = 1; // scale for kobe image.
-var speed = 0.01;
+var speed = -0.01;
 function preload(){
 	kobeImage = loadImage("kobe.jpg");
 }
@@ -18,6 +18,8 @@ function draw() {
 
 	// kobe bryant text styles 
 	textSize(30);
+	stroke('darkblue');
+	stroke(10);
 	textFont('Trade Winds');
 	textAlign(CENTER, CENTER);
 	fill('plum');
@@ -38,17 +40,14 @@ function draw() {
 
 	pop();
 
-	//calculate rotation angle 
-	var g = frameCount * PI / 170;
-	shearX(g);
+	
 
-	//	push();
-	//	shearY(g);
+	//calculate rotation angle 
+	var r = frameCount * PI / 170;
+	shearX(r);
 
 	text("KOBE BRYANT", 0, 0); 
+	
 
-
-	//	shearX(g);
-	//	text("KOBE BRYANT", 0, 0);
 
 }
