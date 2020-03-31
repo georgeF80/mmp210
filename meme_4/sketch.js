@@ -39,7 +39,6 @@ function draw() {
 	}
 
 	pop();
-
 	
 
 	//calculate rotation angle 
