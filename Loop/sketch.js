@@ -16,22 +16,18 @@ function setup() {
 function draw(){
 	background('purple');
 
-	for (let x = 0; x <= width; x += 100){
+	for (let x = 0; x <= width; x += 200){
 		
-		let s = x/2;
-
-		fill('orange');
-		ellipse(x, 240, s/2);
+		
+		
 
 		fill('pink');
-		ellipse(x + 20, 237, s/4);
+		ellipse(x, 240, 20);
 
-		ellipse(x - 10, 233, s/5);
-
-		rect(x - 20, 260, s/3, s/9, s/19);
-
-
-
+		ellipse(x + 30, 240 + 30, 20);
+		ellipse(x - 30, 240 - 30, 20);
+		ellipse(x - 30, 240, 20);
+		ellipse(x + 30, 240, 20);
 
 	}
 
